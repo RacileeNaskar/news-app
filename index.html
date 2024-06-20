@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Today's News</h1>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <div class="container">
+        <aside id="sidebar">
+            <h2>All News</h2>
+            <ul id="sidebar-news-list"></ul>
+        </aside>
+        <main>
+            <ul id="news-list"></ul>
+        </main>
+        <aside id="bookmarks">
+            <h2>Bookmarks</h2>
+            <ul id="bookmark-list"></ul>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 News App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
